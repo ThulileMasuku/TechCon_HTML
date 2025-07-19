@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Contact Us - TechCon 2024</title>
+    <style>
+        /* Basic styling for responsiveness and layout */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+            background-color: #f9f9f9;
+            color: #333;
+        }
+        header, footer {
+            background-color: #003366;
+            color: white;
+            padding: 1rem 2rem;
+        }
+        nav a {
+            color: white;
+            margin-right: 1rem;
+            text-decoration: none;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            max-width: 900px;
+            margin: 2rem auto;
+            padding: 0 1rem;
+            background: white;
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+            border-radius: 6px;
+        }
+        h1 {
+            margin-top: 0;
+        }
+        .contact-info {
+            margin-bottom: 2rem;
+        }
+        .contact-info a {
+            color: #003366;
+            text-decoration: none;
+        }
+        .contact-info a:hover {
+            text-decoration: underline;
+        }
+        .social-links a {
+            margin-right: 1rem;
+            display: inline-block;
+            font-weight: bold;
+            color: #003366;
+            text-decoration: none;
+        }
+        .social-links a:hover {
+            text-decoration: underline;
+        }
+        iframe {
+            width: 100%;
+            height: 300px;
+            border: 0;
+            border-radius: 6px;
+            margin-bottom: 2rem;
+        }
+        form {
+            display: flex;
+            flex-direction: column;
+        }
+        label {
+            margin-bottom: 0.3rem;
+            font-weight: bold;
+        }
+        input[type="text"],
+        input[type="email"],
+        textarea {
+            padding: 0.5rem;
+            margin-bottom: 1rem;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            font-size: 1rem;
+            font-family: inherit;
+        }
+        textarea {
+            resize: vertical;
+            min-height: 100px;
+        }
+        button {
+            width: 150px;
+            padding: 0.7rem;
+            font-size: 1rem;
+            font-weight: bold;
+            color: white;
+            background-color: #003366;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            align-self: flex-start;
+        }
+        button:hover {
+            background-color: #0055aa;
+        }
+        footer {
+            text-align: center;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Contact Us</h1>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About</a>
+            <a href="schedule.html">Schedule</a>
+            <a href="register.html">Register</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="contact-info">
+            <h2>Get in Touch</h2>
+            <p>Email us at: 
+                <a href="mailto:email@example.com">email@example.com</a>
+            </p>
+            <p>Follow us on social media:</p>
+            <p class="social-links">
+                <a href="https://twitter.com/TechCon2024" target="_blank" rel="noopener noreferrer">Twitter</a>
+                <a href="https://facebook.com/TechCon2024" target="_blank" rel="noopener noreferrer">Facebook</a>
+                <a href="https://instagram.com/TechCon2024" target="_blank" rel="noopener noreferrer">Instagram</a>
+                <a href="https://linkedin.com/company/TechCon2024" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            </p>
+        </section>
+
+        <section class="map-section">
+            <h2>Our Venue</h2>
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.019587301483!2d-122.41941528468144!3d37.7749297797597!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80858064b5f31e27%3A0x23a2d3a0e11e1f7c!2sMoscone%20Center!5e0!3m2!1sen!2sus!4v1689173296800!5m2!1sen!2sus" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade" 
+                title="TechCon 2024 Venue Map"
+            ></iframe>
+        </section>
+
+        <section class="contact-form">
+            <h2>Contact Us</h2>
+            <form action="#" method="post" novalidate>
+                <label for="name">Name</label>
+                <input type="text" id="name" name="name" required />
+
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" required />
+
+                <label for="message">Message</label>
+                <textarea id="message" name="message" required></textarea>
+
+                <button type="submit">Send Message</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        &copy; 2024 TechCon. All rights reserved.
+    </footer>
+</body>
+</html>
